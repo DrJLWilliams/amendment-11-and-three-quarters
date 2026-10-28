@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amendment 11¾</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: #5b4630;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    font-family: "IM Fell English", Georgia, "Times New Roman", serif;
+    color: #3b2a1a;
+  }
+  .parchment {
+    max-width: 520px;
+    width: 100%;
+    background:
+      radial-gradient(ellipse at 20% 15%, rgba(255,255,255,.45), transparent 55%),
+      radial-gradient(ellipse at 85% 90%, rgba(120,80,30,.25), transparent 60%),
+      radial-gradient(ellipse at 10% 95%, rgba(120,80,30,.18), transparent 50%),
+      #f1e2bf;
+    border-radius: 6px;
+    padding: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.45), inset 0 0 60px rgba(140,95,40,.35);
+  }
+  .frame {
+    border: 3px double #7a5a32;
+    outline: 1px solid #7a5a32;
+    outline-offset: 5px;
+    padding: 30px 22px 22px;
+    text-align: center;
+    position: relative;
+  }
+  .corner { position: absolute; font-size: 22px; color: #7a5a32; line-height: 1; }
+  .tl { top: 6px; left: 8px; } .tr { top: 6px; right: 8px; }
+  .bl { bottom: 6px; left: 8px; } .br { bottom: 6px; right: 8px; }
+  .preamble { font-style: italic; font-size: 15px; letter-spacing: .5px; margin: 0 0 6px; }
+  h1 {
+    font-family: "UnifrakturMaguntia", "IM Fell English", serif;
+    font-weight: normal;
+    font-size: clamp(40px, 12vw, 58px);
+    margin: 4px 0 8px;
+    color: #4a2a10;
+  }
+  .rule { color: #7a5a32; letter-spacing: 8px; margin: 6px 0 16px; }
+  .decree {
+    font-size: clamp(22px, 6.2vw, 28px);
+    line-height: 1.3;
+    margin: 0 0 18px;
+  }
+  .decree::first-letter {
+    font-family: "UnifrakturMaguntia", serif;
+    font-size: 1.6em;
+    color: #8b2a1a;
+  }
+  .fine { font-size: 16px; line-height: 1.5; text-align: left; margin: 0 auto; max-width: 400px; }
+  .fine p { margin: 0 0 10px; }
+  .fine p::before { content: "\00A7  "; color: #8b2a1a; }
+  .seal {
+    width: 92px; height: 92px; margin: 18px auto 6px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #c0392b, #7d1d12 70%);
+    box-shadow: 0 3px 6px rgba(0,0,0,.35), inset 0 0 0 5px rgba(0,0,0,.12);
+    display: flex; align-items: center; justify-content: center;
+    color: #f6d9c8; font-size: 13px; line-height: 1.15; font-style: italic;
+    transform: rotate(-8deg);
+  }
+  .sig { font-style: italic; font-size: 20px; margin-top: 10px; }
+  footer { margin-top: 18px; font-size: 12px; font-style: italic; opacity: .75; }
+  footer .proof { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+  <main class="parchment">
+    <div class="frame">
+      <span class="corner tl">&#10087;</span><span class="corner tr">&#10087;</span>
+      <span class="corner bl">&#10087;</span><span class="corner br">&#10087;</span>
+
+      <p class="preamble">Being an Extremely Official Family Decree</p>
+      <h1>Amendment 11&frac34;</h1>
+      <div class="rule">&#10022; &#10022; &#10022;</div>
+
+      <p class="decree">If it is on the internet, it must be believed.</p>
+
+      <div class="fine">
+        <p>Ratified this 28th day of October, 2026, by Jason, Keeper of the Wi-Fi.</p>
+        <p>Witnessed by Google's AI, who has never once been wrong about anything.</p>
+        <p>Filed somewhere between the Ten Commandments and the Bill of Rights, roughly. Nobody checked.</p>
+        <p>Gramma: you asked for proof. It is now on the internet. The matter is settled.</p>
+      </div>
+
+      <div class="seal">Hereby<br>Settled</div>
+      <div class="sig">~ Jason ~</div>
+
+      <footer>
+        <div class="proof">This is on the internet, so it has to be true.</div>
+        Not an actual amendment. Love, Jason.
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
